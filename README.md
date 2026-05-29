@@ -7,3 +7,7 @@ Weiter bekannte Auszeichnungssprachen sind:
 - Hypertext Markup Language (HTML)
 - Extensible Markup Language (XML)
 - Yet Another Markup Language (YAML, YML)
+
+# Installation von Node.js
+
+Javascript läuft unter normalen Umständen im Browser. Es gibt aber auch die Möglichkeit...
