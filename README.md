@@ -12,3 +12,7 @@ Weiter bekannte Auszeichnungssprachen sind:
 
 Javascript läuft unter normalen Umständen in einer Browser-Sandbox (nur im Browser).
 Seit ca. 2010 gibt es eine Laufzeitumgebung (*Runtime Environment*) für JS, damit man auch serverseitig JS programmieren kann: [Node.js](https://nodejs.org)
+
+# Installation von pnpm
+
+Der standardmäßige *Package Manager* für Node.js ist `npm` (*Node Package Manager*). Eine etwas modernere und inzwischen beliebtere Variante ist [`pnpm`](https://pnpm.io)
