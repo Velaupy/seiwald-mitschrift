@@ -10,4 +10,4 @@ Weiter bekannte Auszeichnungssprachen sind:
 
 # Installation von Node.js
 
-Javascript läuft unter normalen Umständen im Browser. Es gibt aber auch die Möglichkeit...
+Javascript läuft unter normalen Umständen im Browser. Es gibt aber auch die Möglichkeit... asdasfagasgasg
