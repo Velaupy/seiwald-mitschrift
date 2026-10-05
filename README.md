@@ -27,5 +27,3 @@ Installation mit dem Skript `pnpm create strapi`. Daraufhin führt das CLI durch
 # VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
 VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent View. Dort können alle Anpassungen des "_Coding Harness_" vorgenommen werden. Wir können unseren _Harness_ mit verschiedenen Methoden anpassen:
-
-# 
