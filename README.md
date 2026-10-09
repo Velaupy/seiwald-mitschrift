@@ -32,7 +32,7 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
 
 1. Statische Website (HTML, CSS, ggf. JavaScript) - initiale Phase des Webdevelopments, bei der Inhalte fest im HTML-Code verankert sind. Dominant in den 1990er-Jahren.
 2. Dynamische Website (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenbankanbindung). Dominant in den 2000er-Jahren.
-3. *Single-Page Application* (SPA) - mit JavaScript-Frameworks erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten. Dominant in den 2010er-Jahren.
+3. *Single-Page Application* (SPA) - mit JavaScript-Frameworks erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten. Dominant in den 2010er-Jahren. Um Handy-Apps möglicht nahe zu kommen, wurde der *Progressive Web App* (PWA)-Standard entwickelt. Damit können Webapps offline funktionieren, Push-Benachrichtigungen senden lassen, und auf bestimmte native Funktionen des Geräts zugreifen.
 
 # VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
