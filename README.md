@@ -39,7 +39,8 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
 
 Frontend-Frameworks wenden folgende Architekturprinzipien an, um eine möglichst gute *User Experience* (UX) zu erreichen:
 
-- Komponten - Komponten sind die wiederverwendbaren "Lego"-Bausteine einer Webapp.
+- **Komponenten** - Komponenten sind die wiederverwendbaren "Lego"-Bausteine einer Webapp. Sie kapseln HTML, CSS und JavaScript in einer einzigen Einheit, die unabhängig von anderen Komponenten entwickelt, getestet und gewartet werden kann.
+- **Deklarative Programmierung** - der JavaScript- und Template(HTML)-Code beschreiben, wie die Benutzeroberfläche aussehen soll, anstatt die einzelnen Schritte zur Erstellung der Benutzeroberfläche zu definieren. Das Framework kümmert sich um die Umsetzung. Dabei kommt **Reaktivität** (*reactivity*) ins Spiel: Wenn sich der Zustand der Anwendung ändert, aktualisiert das Framework automatisch die Benutzeroberfläche, um den neuen Zustand widerzuspiegeln. Wenn die Aktualisierung auch in die andere Richtung funktioniert (d.h. wenn sich die Benutzeroberfläche ändert, weil der Benutzer mit ihr interagiert, und der Zustand (*state*) der Anwendung entsprechend aktualisiert wird), spricht man von bidirektionaler Datenbindung (*two-way data binding*). Logikbausteine (Schleifen zur Darstellung von Listen und Bedingungen für das konditionale Ein- und Ausblenden von UI-Elementen) werden in den Templates (HTML) der Komponenten definiert. Die Templates werden vom Framework in die eigentliche Benutzeroberfläche übersetzt.
 
 # VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
