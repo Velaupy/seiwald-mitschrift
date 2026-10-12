@@ -32,7 +32,14 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
 
 1. Statische Website (HTML, CSS, ggf. JavaScript) - initiale Phase des Webdevelopments, bei der Inhalte fest im HTML-Code verankert sind. Dominant in den 1990er-Jahren.
 2. Dynamische Website (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenbankanbindung). Dominant in den 2000er-Jahren.
-3. *Single-Page Application* (SPA) - mit JavaScript-Frameworks erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten. Dominant in den 2010er-Jahren. Um Handy-Apps möglicht nahe zu kommen, wurde der *Progressive Web App* (PWA)-Standard entwickelt. Damit können Webapps offline funktionieren, Push-Benachrichtigungen senden lassen, und auf bestimmte native Funktionen des Geräts zugreifen.
+3. *Single-Page Application* (SPA) - mit JavaScript-Frameworks erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten. Dominant in den 2010er-Jahren. Um Handy-Apps möglicht nahe zu kommen, wurde der *Progressive Web App* (PWA)-Standard entwickelt. Damit können Webapps offline funktionieren, Push-Benachrichtigungen senden lassen, und auf bestimmte native Funktionen des Geräts zugreifen. Es gibt drei Voraussetzungen, die eine Webapp erfüllen muss, um als PWA zu gelten:
+	1. Die Webapp muss über ein Web-App-Manifest verfügen (`manifest.json`), das grundlegende Informationen über die App enthält (Name, Icons, Start-URL, etc.).
+	2. Die Webapp muss einen Service Worker implementieren, der das Caching von Ressourcen und die Offline-Funktionalität ermöglicht. Ein Service Worker ist eine JavaScript-Datei, die im Hintergrund des Browers läuft - selbst wenn der Browser geschlossen ist.
+	3. Die Webapp muss über HTTPS bereitgestellt werden, um die Sicherheit und Integrität der Anwendung zu gewährleisten.
+
+Frontend-Frameworks wenden folgende Architekturprinzipien an, um eine möglichst gute *User Experience* (UX) zu erreichen:
+
+- Komponten - Komponten sind die wiederverwendbaren "Lego"-Bausteine einer Webapp.
 
 # VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
