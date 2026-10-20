@@ -68,7 +68,11 @@ Die Unterstruktur des src-Ordners sieht in etwa so aus:
 ![Unterstruktur des src-Ordners](images/svelte-anwendung-ordnerstruktur/src.png)
 
 - `src` enthält den Quellcode der Anwendung.
-- `app.css`, `App.svelte` und `main.ts` sind die Einstiegspunkte der Anwendung (in diesem Fall eine SPA). Sie werden vom Browser als erstes geladen, wenn die entsprechende Website aufgerufen wird.
-	- `app.css` enthält die globalen CSS-Stile der Anwendung.
-	- `App.svelte` ist die Hauptkomponente der Anwendung, die andere Komponenten importiert und in der Benutzeroberfläche anzeigt.
-	- `main.ts` ist der Einstiegspunkt für das JavaScript/TypeScript der Anwendung. Sie initialisiert die Anwendung in der `App.svelte` und bindet sie an das HTML-Dokument (`index.html` im Root-Ordner).
+	- `app.css`, `App.svelte` und `main.ts` sind die Einstiegspunkte der Anwendung (in diesem Fall eine SPA). Sie werden vom Browser als erstes geladen, wenn die entsprechende Website aufgerufen wird.
+		- `app.css` enthält die globalen CSS-Stile der Anwendung.
+		- `App.svelte` ist die Hauptkomponente der Anwendung, die andere Komponenten importiert und in der Benutzeroberfläche anzeigt.
+		- `main.ts` ist der Einstiegspunkt für das JavaScript/TypeScript der Anwendung. Sie initialisiert die Anwendung in der `App.svelte` und bindet sie an das HTML-Dokument (`index.html` im Root-Ordner).
+	- `lib` enthält benutzerdefinierte UI-Komponenten und Hilfsfunktionen, die in der Anwendung verwendet werden.
+		- `components` enthält die wiederverwendbaren Komponenten der Anwendung. Sie sind die Bausteine der Benutzeroberfläche.
+		- `game` enthält die Logik für das Spiel.
+			- `store.svelte.ts` enthält den Zustand (*state*) der Anwendung. D.h. sie speichert alle Daten, die sich im Laufe der Zeit ändern können (z.B. Spielstand, Spielergebnisse, Einstellungen, usw.) und fungiert als zentrale Datenquelle - *Single Source of Truth*.
