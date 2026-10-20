@@ -45,3 +45,18 @@ Frontend-Frameworks wenden folgende Architekturprinzipien an, um eine möglichst
 # VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
 VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent View. Dort können alle Anpassungen des "_Coding Harness_" vorgenommen werden. Wir können unseren _Harness_ mit verschiedenen Methoden anpassen:
+
+---
+
+# Frontend-Entwicklung
+
+## Ordnerstruktur
+
+Die Ordnerstruktur einer typischen Frontend-Anwendung sieht in etwa so aus:
+
+![Ordnerstruktur einer Svelte-Anwendung](image.png)
+
+- `.vscode` enthält Einstellungen für den VS-Code-Editor.
+- `node_modules` enthält die Abhängigkeiten (*dependencies*) der Anwendung.
+  - Das sind jene Pakete, die bei der Entwicklung (*build time*) und/oder bei der Ausführung (*runtime*) der Anwendung benötigt werden. Alle Abhängigkeiten sind in der Datei `package.json` aufgelistet.
+  - Außerdem enthält der Datei `package.json` Informationen über die Anwendung selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisieren (z.B. Starten der Anwendung, Testen der Anwendung, erstellen einer Produktionsversion der Anwendung).
