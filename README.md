@@ -54,16 +54,21 @@ VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent 
 
 Die Ordnerstruktur einer typischen Frontend-Anwendung sieht in etwa so aus:
 
-![Ordnerstruktur einer Svelte-Anwendung](images/svelte-anwendung-ordnerstruktur.png)
+![Ordnerstruktur einer Svelte-Anwendung](images/svelte-anwendung-ordnerstruktur/root.png)
 
 - `.vscode` enthält Einstellungen für den VS-Code-Editor.
 - `node_modules` enthält die Abhängigkeiten (*dependencies*) der Anwendung.
-  - Das sind jene Pakete, die bei der Entwicklung (*build time*) und/oder bei der Ausführung (*runtime*) der Anwendung benötigt werden. Alle Abhängigkeiten sind in der Datei `package.json` aufgelistet.
-  - Außerdem enthält der Datei `package.json` Informationen über die Anwendung selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisieren (z.B. Starten der Anwendung, Testen der Anwendung, erstellen einer Produktionsversion der Anwendung).
+	- Das sind jene Pakete, die bei der Entwicklung (*build time*) und/oder bei der Ausführung (*runtime*) der Anwendung benötigt werden. Alle Abhängigkeiten sind in der Datei `package.json` aufgelistet.
+	- Das sind jene Pakete, die bei der Entwicklung (*build time*) und/oder bei der Ausführung (*runtime*) der Anwendung benötigt werden. Alle Abhängigkeiten sind in der Datei `package.json` aufgelistet.
+	- Außerdem enthält der Datei `package.json` Informationen über die Anwendung selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisieren (z.B. Starten der Anwendung, Testen der Anwendung, erstellen einer Produktionsversion der Anwendung).
 - `public` enthält statische Dateien (z.B. Bilder, Fonts, Icons), die direkt vom Browser unter dem jeweiligen Pfad geladen werden können. (`public/image.png` -> `johak.at/image.png`)
 ---
 Die Unterstruktur des src-Ordners sieht in etwa so aus:
 
-![Unterstruktur des src-Ordners](images/svelte-anwendung-src-ordnerstruktur.png)
+![Unterstruktur des src-Ordners](images/svelte-anwendung-ordnerstruktur/src.png)
 
 - `src` enthält den Quellcode der Anwendung.
+- `app.css`, `App.svelte` und `main.ts` sind die Einstiegspunkte der Anwendung (in diesem Fall eine SPA). Sie werden vom Browser als erstes geladen, wenn die entsprechende Website aufgerufen wird.
+	- `app.css` enthält die globalen CSS-Stile der Anwendung.
+	- `App.svelte` ist die Hauptkomponente der Anwendung, die andere Komponenten importiert und in der Benutzeroberfläche anzeigt.
+	- `main.ts` ist der Einstiegspunkt für das JavaScript/TypeScript der Anwendung. Sie initialisiert die Anwendung in der `App.svelte` und bindet sie an das HTML-Dokument (`index.html` im Root-Ordner).
