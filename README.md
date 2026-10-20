@@ -54,9 +54,16 @@ VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent 
 
 Die Ordnerstruktur einer typischen Frontend-Anwendung sieht in etwa so aus:
 
-![Ordnerstruktur einer Svelte-Anwendung](image.png)
+![Ordnerstruktur einer Svelte-Anwendung](images/svelte-anwendung-ordnerstruktur.png)
 
 - `.vscode` enthält Einstellungen für den VS-Code-Editor.
 - `node_modules` enthält die Abhängigkeiten (*dependencies*) der Anwendung.
   - Das sind jene Pakete, die bei der Entwicklung (*build time*) und/oder bei der Ausführung (*runtime*) der Anwendung benötigt werden. Alle Abhängigkeiten sind in der Datei `package.json` aufgelistet.
   - Außerdem enthält der Datei `package.json` Informationen über die Anwendung selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisieren (z.B. Starten der Anwendung, Testen der Anwendung, erstellen einer Produktionsversion der Anwendung).
+- `public` enthält statische Dateien (z.B. Bilder, Fonts, Icons), die direkt vom Browser unter dem jeweiligen Pfad geladen werden können. (`public/image.png` -> `johak.at/image.png`)
+---
+Die Unterstruktur des src-Ordners sieht in etwa so aus:
+
+![Unterstruktur des src-Ordners](images/svelte-anwendung-src-ordnerstruktur.png)
+
+- `src` enthält den Quellcode der Anwendung.
